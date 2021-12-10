@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Account_History__c</fullName>
+        <description>R1-R-0013-This field is used to indicate Account History.</description>
+        <externalId>false</externalId>
+        <label>Account History</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Active_BUs__c</fullName>
+        <description>R1_R-0249</description>
+        <externalId>false</externalId>
+        <label>Active BUs</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primacor</fullName>
+                    <default>false</default>
+                    <label>Primacor</label>
+                </value>
+                <value>
+                    <fullName>SKGC</fullName>
+                    <default>false</default>
+                    <label>SKGC</label>
+                </value>
+                <value>
+                    <fullName>Functional Polyolefins</fullName>
+                    <default>false</default>
+                    <label>SKFP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Already_visited__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to check weather atleast one call/visit report is related to the account or not.</description>
+        <externalId>false</externalId>
+        <label>Already visited?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BU_Application_2__c</fullName>
+        <externalId>false</externalId>
+        <label>BU Application 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>BU_application_1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>BU_application_2_values</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOTIVE</controllingFieldValue>
+                <valueName>AUTOMOTIVE PART</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOTIVE</controllingFieldValue>
+                <valueName>FOAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOTIVE</controllingFieldValue>
+                <valueName>FUEL &amp; CHEMICAL CONTAINERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOTIVE</controllingFieldValue>
+                <valueName>THERMOADHESIVE FILM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>AGRICULTURAL FILM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>ALU PANEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>BITUMEN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>CABLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>INDUSTRIAL LAMINATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>PIPE &amp; TUBE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION &amp; INDUSTRIAL</controllingFieldValue>
+                <valueName>PV PANEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PACKAGING</controllingFieldValue>
+                <valueName>FLEXIBLE COEXTRUSION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PACKAGING</controllingFieldValue>
+                <valueName>FLEXIBLE EXTRUSION COATING LAMINATION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PACKAGING</controllingFieldValue>
+                <valueName>INKS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PACKAGING</controllingFieldValue>
+                <valueName>RIGID PACKAGING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPOUNDING</controllingFieldValue>
+                <valueName>COMPATIBILIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPOUNDING</controllingFieldValue>
+                <valueName>COUPLING AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPOUNDING</controllingFieldValue>
+                <valueName>IMPACT MODIFIER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPOUNDING</controllingFieldValue>
+                <valueName>RECYCLING</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BU_application_1__c</fullName>
+        <externalId>false</externalId>
+        <label>BU application 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BU_Application_1</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Business account</fullName>
+                    <default>false</default>
+                    <label>Business account</label>
+                </value>
+                <value>
+                    <fullName>Supplier</fullName>
+                    <default>false</default>
+                    <label>Supplier/Toller</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
