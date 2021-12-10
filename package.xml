@@ -76,6 +76,10 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Account.Account_List</members>
+        <name>ListView</name>
+    </types>
+    <types>
         <members>Admin</members>
         <members>CPQ Integration User</members>
         <members>Chatter External User</members>
